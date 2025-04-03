@@ -1,0 +1,51 @@
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.progress {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: blue;
+    transition: width 0.3s;
+}
+
+.progress-step {
+    width: 30px;
+    height: 30px;
+    background: lightgray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.progress-step.active {
+    background: blue;
+    color: white;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.buttons {
+    margin-top: 20px;
+}
